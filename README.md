@@ -45,3 +45,4 @@ _All colors used in the design are standard Tailwind CSS colors._
 <kbd>
 	<img src="docs/mightymeld.png">
 </kbd>
+# mightymeld-speed
