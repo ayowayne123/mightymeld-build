@@ -1,0 +1,5 @@
+This is a list of the features I am trying to implement in this creatiuve build
+
+* Hint system(need to figure out a way to make sure you cant use hint twice until it the hint cycle fimishes)
+* Ability To store high score and replace with newer score
+* Varying levels of difficultyu, depending on level chosen

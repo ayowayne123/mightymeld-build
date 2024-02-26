@@ -3,7 +3,14 @@ export function Tile({ content: Content, flip, state }) {
     case "start":
       return (
         <Back
-          className="inline p-3 rounded-lg-block h-16 w-16 bg-indigo-300 text-center"
+          className="inline-block p-3 rounded-lg h-16 w-16 bg-indigo-300 text-center"
+          flip={flip}
+        />
+      );
+    case "revealed":
+      return (
+        <Hinted
+          className="inline-block p-3 rounded-lg h-16 w-16 bg-red-500 text-center animate-pulse"
           flip={flip}
         />
       );
@@ -39,6 +46,10 @@ export function Tile({ content: Content, flip, state }) {
 }
 
 function Back({ className, flip }) {
+  return <div onClick={flip} className={className}></div>;
+}
+
+function Hinted({ className, flip }) {
   return <div onClick={flip} className={className}></div>;
 }
 
